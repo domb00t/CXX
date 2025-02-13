@@ -103,7 +103,7 @@ private:
     }
 
     Iterator operator--(int n) {
-      if (m_ptr == m_ptr || m_ptr - n < m_ptr)
+      if (Vector<value_type> :: ptr == m_ptr || m_ptr - n < m_ptr)
         throw std ::out_of_range("out_of_range");
       Vector ::Iterator copy = *this;
       if (n) {
@@ -149,7 +149,7 @@ struct S {
 
 int main() {
   Vector<int> v(3);
-  Vector<int> v2 = {'2', '3', '3'};
+  Vector<int> v2 = {2, 3, 3};
   std ::cout << *v2.begin() << std ::endl;
   return 0;
 }
